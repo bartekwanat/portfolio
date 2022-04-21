@@ -1,0 +1,39 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  .text-container {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+      .title {
+        font-size: 4rem;
+
+        &::after {
+          content: ".";
+          color: #ff5757;
+        }
+      }
+      .text {
+        font-size: 1.3rem;
+        width: 70%;
+        transform: translateY(-5vh);
+      }
+  }
+
+  .animation-container {
+    width: 50vw;
+    height: 100vh;
+    background-color: #000;
+
+    .animation {
+      width: 50%;
+    }
+  }
+}
+

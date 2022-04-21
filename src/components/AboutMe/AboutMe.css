@@ -1,0 +1,35 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.wrapper .text-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .text-container .title {
+  font-size: 4rem;
+}
+.wrapper .text-container .title::after {
+  content: ".";
+  color: #ff5757;
+}
+.wrapper .text-container .text {
+  font-size: 1.3rem;
+  width: 70%;
+  transform: translateY(-5vh);
+}
+.wrapper .animation-container {
+  width: 50vw;
+  height: 100vh;
+  background-color: #000;
+}
+.wrapper .animation-container .animation {
+  width: 50%;
+}
+
+/*# sourceMappingURL=AboutMe.css.map */

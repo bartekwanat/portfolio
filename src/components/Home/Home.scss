@@ -1,6 +1,5 @@
 .home-wrapper {
-  background-image: url("../../assets/background.png");
-  background-size: 500px;
+  background-color: #000;
   height: 100vh;
   overflow: hidden;
   header {
@@ -13,7 +12,7 @@
 
     .logo {
         height: 100px;
-        transform: translateX(5vw);
+        transform: translateX(8vw) translateY(4vh);
     }
     nav {
       flex-basis: 50%;
@@ -23,10 +22,11 @@
         display: flex;
         justify-content: space-evenly;
         list-style: none;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
 
-        li:first-child  {
-        color: #41f2c0;
+        :first-child  {
+        color: #ff5757;
+          text-decoration: none;
         }
       }
     }
@@ -51,17 +51,19 @@
 
       .hi {
         margin: 0;
+        color: white;
       }
       .hi:after {
-        content: "&";
-        color: #41f2c0;
+        content: " &";
+        color: #ff5757;
       }
       .wanna {
         margin: 0;
+        color: white;
       }
       .wanna:after {
         content: ".";
-        color: #41f2c0;
+        color: #ff5757;
       }
     }
     .photo {
@@ -69,6 +71,7 @@
       align-self: flex-end;
       max-height: 70vh;
       opacity: 0.9;
+      transform: translateX(10vw);
 
     }
     .icon-list {
@@ -80,6 +83,10 @@
       justify-content: space-between;
       height: 25vh;
       transform: translateX(7vw);
+      color: rgba(255,255,255, 0.9);
+      padding: 0.7rem;
+      background-color: #111;
+      border-radius: 20px;
 
     }
   }
