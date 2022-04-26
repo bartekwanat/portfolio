@@ -1,0 +1,63 @@
+.learn-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+
+  .title-container {
+    height: 100vh;
+    width: 50%;
+    background-color: #000;
+    color: white;
+
+    .brain {
+      width: 20vw;
+      min-width: 100px;
+      max-width: 220px;
+      transform: translateY(5vh) translateX(5vw);
+    }
+
+    .title {
+
+      right: calc(50vw - 10px);
+      padding: 30px;
+      transform: translateX(30vw);
+      font-size: 3rem;
+      width: 15vw;
+      min-width: 250px;
+      max-width: 350px;
+      border: 10px solid white;
+      text-align: center;
+      scroll-snap-align: start;
+
+
+      &::after {
+        content: " ?";
+        color: #ff5757;
+      }
+    }
+  }
+  .learn-container {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .skills-list {
+      height: 80%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .skill {
+        height:20%
+      }
+    }
+  }
+
+
+
+}

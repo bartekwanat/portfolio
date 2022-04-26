@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  scroll-snap-align: start;
 }
 .wrapper .text-container {
   width: 50vw;

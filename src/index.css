@@ -3,13 +3,20 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
-
-body {
+html body {
   margin: 0;
   font-family: "Exo 2", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+html body #fullpage {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
 }
 
 code {
